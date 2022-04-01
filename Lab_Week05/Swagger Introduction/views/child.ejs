@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="/javascripts/index.js"></script>
+
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <h2>Child</h2>
+
+    <form id=“xForm-child" onsubmit="onSubmitChild()">
+        <p><label for='child-age'>age of the child:</label>
+                <input type="number" name="age" id="age" value="9">
+        </p>
+      <h3>Parent of the child</h3>
+      <label for='firstname'>First name:</label>
+              <input type="text" name="firstname" id="firstname" value="Mickey">
+              <p><label for='lastname'>Last name:</label>
+                      <input type="text" name="lastname" id="lastname" value="Mouse">
+              </p>
+
+        <p><input type="submit" name="g" value="Submit" id="g"></p>
+    </form>
+<h1>Results</h1>
+<div id="results"></div>
+  </body>
+</html>
